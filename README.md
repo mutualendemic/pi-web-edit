@@ -4,7 +4,11 @@ Adds a manual **Edit** preview to PI WEB's existing **Files** panel. Choose **Ed
 
 The preview is limited to non-binary, non-truncated files up to 2 MiB. It includes syntax support for JavaScript/TypeScript, JSON, CSS, HTML, Python, Markdown, YAML, SQL, Rust, XML, C/C++, Java, and Go. Before saving, the plugin checks whether the file's modification time changed since it was opened and asks for an explicit **Overwrite** action when it detects a conflict. That check is advisory (the host write API does not provide an atomic compare-and-swap).
 
-## Build and install
+## Install from npm
+
+After publication, install `@mutualendemic/pi-web-codemirror-editor` through **Settings → Pi packages**. Then enable **CodeMirror Editor** in **Settings → PI WEB plugins** and reload the browser. The plugin is browser-only; no session-daemon restart is required.
+
+## Build and install locally
 
 ```sh
 npm install
